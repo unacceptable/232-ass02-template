@@ -603,7 +603,7 @@ int challenge13()
 {
     int result = mystery(4);
 
-    return 0;
+    return 2;
 }
 
 
@@ -675,5 +675,5 @@ int challenge14()
 
     int result = transformData(data, 3);
 
-    return 0;
+    return 22;
 }

@@ -33,9 +33,9 @@ int main()
 	// challenge09();
 	// challenge10();
 	// challenge11();
-	challenge12();
+	// challenge12();
 	// challenge13();
-	// challenge14();
+	challenge14();
 	//int x = getZero();
 
 	//printf("%d", x);

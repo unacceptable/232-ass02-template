@@ -140,7 +140,7 @@ int challenge03()
     y = x - y;
     x = x - y;
 
-    return 0;
+    return 10;
 }
 
 

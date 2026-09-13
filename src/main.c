@@ -36,7 +36,7 @@ int main()
 	challenge12();
 	challenge13();
 	challenge14();
-	int x = getZero();
+	//int x = getZero();
 
 	printf("%d", x);
 

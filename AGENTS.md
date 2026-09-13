@@ -24,9 +24,12 @@ version runs in Docker through shims in `~/.bin` (`gcc`, `g++`, `make`, `gdb`, `
 inside `~/Git/Montana Tech`. Put `~/.bin` first on `PATH` and `make` builds `bin/main`, a Linux
 aarch64 ELF that only runs inside the container (`docker-gcc ./bin/main`, or under `gdb`).
 
-The image cannot link 32-bit x86 objects, so `lib/unity.o` and Dr. Pach's `tests02.o` cannot be
-run locally. **The GitHub Actions run is the only test.** It downloads the current test object,
-compiles `src/code.c` in 32-bit mode on Ubuntu, and runs it on every push to `main` and every PR.
+The image cannot link 32-bit x86 objects, so `lib/unity.o` and Dr. Pach's `tests02.o` do not link
+in it. **Run the tests with `tools/run-tests.sh`**: it downloads the current test object and runs
+the workflow's exact build in an emulated amd64 Ubuntu container (about two minutes the first time
+for the apt install). Unity prints PASS or FAIL per challenge and never the expected value. The
+GitHub Actions workflow does the same on every push to `main`; as of 2026-09-12 it has never fired
+for a branch push or the draft PR on this fork, so do not wait on it. `tests/` is gitignored.
 
 ## Debugging
 

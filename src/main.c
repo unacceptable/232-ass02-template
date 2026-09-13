@@ -22,7 +22,6 @@ int challenge14();
 
 int main()
 {
-
 	challenge01();
 	challenge02();
 	challenge03();

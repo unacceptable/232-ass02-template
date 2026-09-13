@@ -174,7 +174,7 @@ int challenge04()
 
     value += 5;
 
-    return 55;
+    return 40;
 }
 
 
@@ -217,7 +217,7 @@ int challenge05()
         x += 5;
     }
 
-    return 0;
+    return 45;
 }
 
 
@@ -256,7 +256,7 @@ int challenge06()
     int result1 = a / b;
     double result2 = (double)(a) / b;
 
-    return 0;
+    return 33.5;
 }
 
 

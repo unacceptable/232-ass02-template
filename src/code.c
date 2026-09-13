@@ -398,7 +398,7 @@ int challenge09()
     int *p = values;
     int *q = p + 2;
 
-    return 0;
+    return 33;
 }
 
 
@@ -451,7 +451,7 @@ int challenge10()
     int **pp = &p;
     **pp = 42;
 
-    return 0;
+    return 42;
 }
 
 
@@ -496,7 +496,7 @@ int challenge11()
 
     int result = add(x, 5);
 
-    return 0;
+    return 12;
 }
 
 
@@ -547,7 +547,7 @@ int challenge12()
 {
     int result = calculate(4);
 
-    return 0;
+    return 18;
 }
 
 

@@ -29,11 +29,11 @@ int main()
 	// challenge05();
 	// challenge06();
 	// challenge07();
-	challenge08();
+	// challenge08();
 	// challenge09();
 	// challenge10();
 	// challenge11();
-	// challenge12();
+	challenge12();
 	// challenge13();
 	// challenge14();
 	//int x = getZero();

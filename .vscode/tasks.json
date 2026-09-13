@@ -5,6 +5,20 @@
             "label": "build",
             "type": "shell",
             "command": "mingw32-make",
+            "group": "build",
+            "windows": { "command": "mingw32-make" },
+            "osx": {
+                "command": "make",
+                "options": { "env": { "PATH": "${env:HOME}/.bin:${env:PATH}" } }
+            },
+            "linux": { "command": "make" }
+        },
+        {
+            "label": "build (native clang, for lldb)",
+            "type": "shell",
+            "command": "/usr/bin/gcc",
+            "args": ["-g", "-Wall", "-Isrc", "src/main.c", "src/code.c", "-o", "bin/main-native"],
+            "options": { "cwd": "${workspaceFolder}" },
             "group": "build"
         }
     ]

@@ -2,9 +2,9 @@
 // CSCI 232 Fall 2026
 // Programming Assignment #2
 // I declare that I am the author of this work, take full responsibility for it, and have disclosed any material external assistance.
-// I used Claude (Anthropic) to set up the GCC 9.2.0 Docker toolchain on macOS and to write gdb command scripts that
-// stop at each challenge's breakpoint and print the requested variables. I observed the values and chose the return
-// values myself.
+// I used Claude Code (Anthropic) to set up the GCC 9.2.0 Docker toolchain and VS Code debug configuration on macOS,
+// to commit and push my work, and to double-check my answers by running the public test object locally. I observed
+// the values in the debugger and chose the return values myself.
 
 char * AUTHOR_NAME = (char *) "Robert Jackson";
 char * AUTHOR_AUTHORSHIP = (char *) "I acknowledge that I have worked on this assignment independently, except where explicitly noted and referenced. Any collaboration or use of external resources has been properly cited. I am fully aware of the consequences of academic dishonesty and agree to abide by the university's academic integrity policy. I understand the seriousness and implications of plagiarism.";

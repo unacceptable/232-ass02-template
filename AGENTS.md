@@ -34,6 +34,14 @@ compiles `src/code.c` in 32-bit mode on Ubuntu, and runs it on every push to `ma
   "C: Docker GCC 9.2.0 gdb (macOS)" builds with the shim and attaches gdb through it (VS Code's
   MI protocol works over the shim's stdin/stdout). "C: native clang + lldb (macOS)" is the
   fallback: same source, Apple toolchain, `bin/main-native`. Do not remove the Windows entries.
+- **VS Code only loads the `.vscode` of the folder it has open.** Robert works with
+  `~/Git/Montana Tech` as the workspace, so the configs in this repo are invisible to him and F5
+  falls back to the C/C++ extension's auto-generated "gcc build active file" task, which compiles
+  one file with Apple clang and fails to link. The same two configurations therefore also live in
+  `~/Git/Montana Tech/.vscode/launch.json` and `tasks.json`, with paths pointed at this directory
+  (names prefixed "CSCI 232 Assignment 02:"). Keep both copies in step. Pick the configuration
+  from the Run and Debug dropdown and press F5; the play button in the editor title bar ignores
+  `launch.json` and regenerates the single-file task.
 - Command line: one gdb script per challenge in `csci-232/Week 2/Labs/gdb-scripts/NN.gdb`. Each
   stops where the challenge text says and prints what it asks to be inspected. Run from this
   directory: `gdb -q -batch -x ../gdb-scripts/NN.gdb ./bin/main`. Breakpoints in the scripts are

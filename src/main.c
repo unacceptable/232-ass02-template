@@ -38,9 +38,8 @@ int main()
 	challenge14();
 	//int x = getZero();
 
-	printf("%d", x);
+	//printf("%d", x);
 
 	getchar();
     return 0;
 }
-

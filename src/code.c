@@ -303,7 +303,7 @@ int challenge07()
     int *y = &x;
     *y = 4;
 
-    return 0;
+    return 4;
 }
 
 
@@ -351,7 +351,7 @@ int challenge08()
     int *p = values;
     int result = *(p + 3);
 
-    return 0;
+    return 40;
 }
 
 

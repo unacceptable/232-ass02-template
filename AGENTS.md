@@ -39,7 +39,10 @@ compiles `src/code.c` in 32-bit mode on Ubuntu, and runs it on every push to `ma
   falls back to the C/C++ extension's auto-generated "gcc build active file" task, which compiles
   one file with Apple clang and fails to link. The same two configurations therefore also live in
   `~/Git/Montana Tech/.vscode/launch.json` and `tasks.json`, with paths pointed at this directory
-  (names prefixed "CSCI 232 Assignment 02:"). Keep both copies in step. Pick the configuration
+  (names prefixed "CSCI 232 Assignment 02:"). Keep both copies in step.
+- Both gdb configurations launch `.vscode/gdb-mi.sh`, not `~/.bin/gdb` directly. VS Code starts
+  the debugger from an arbitrary working directory (sometimes `~/.bin`), and the shim refuses to
+  use Docker from outside `~/Git/Montana Tech`; the wrapper `cd`s into this repo first. Pick the configuration
   from the Run and Debug dropdown and press F5; the play button in the editor title bar ignores
   `launch.json` and regenerates the single-file task.
 - Command line: one gdb script per challenge in `csci-232/Week 2/Labs/gdb-scripts/NN.gdb`. Each

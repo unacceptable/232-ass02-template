@@ -153,7 +153,7 @@ int challenge03()
 // 3. Inspect "value" in Variables.
 // 4. Step Over.
 // 5. Inspect value
-// 6. Return the sum of the final value.
+// 6. Return the sum of the values.
 //
 
 // ============================================================
@@ -164,7 +164,7 @@ int challenge04()
 {
     int value = 25;
 
-    // value += 5;
+    value += 5;
 
     return 0;
 }

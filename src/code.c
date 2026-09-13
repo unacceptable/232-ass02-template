@@ -103,7 +103,7 @@ int challenge02()
     x -= 5;
     x *= 2;
 
-    return 0;
+    return 14;
 }
 
 

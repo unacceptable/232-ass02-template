@@ -24,8 +24,8 @@ int main()
 {
 	// challenge01();
 	// challenge02();
-	challenge03();
-	// challenge04();
+	// challenge03();
+	challenge04();
 	// challenge05();
 	// challenge06();
 	// challenge07();

@@ -174,7 +174,7 @@ int challenge04()
 
     value += 5;
 
-    return 0;
+    return 55;
 }
 
 

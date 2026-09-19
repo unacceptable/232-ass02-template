@@ -28,8 +28,10 @@ The image cannot link 32-bit x86 objects, so `lib/unity.o` and Dr. Pach's `tests
 in it. **Run the tests with `tools/run-tests.sh`**: it downloads the current test object and runs
 the workflow's exact build in an emulated amd64 Ubuntu container (about two minutes the first time
 for the apt install). Unity prints PASS or FAIL per challenge and never the expected value. The
-GitHub Actions workflow does the same on every push to `main`; as of 2026-09-12 it has never fired
-for a branch push or the draft PR on this fork, so do not wait on it. `tests/` is gitignored.
+GitHub Actions workflow does the same on pushes to `main`, on non-draft pull requests, and by hand
+(`gh workflow run "Run Tests" --repo unacceptable/232-ass02-template`). It did not fire for the
+draft PR or for the first merge to `main`, so check the Actions tab rather than assuming.
+`tests/` is gitignored.
 
 ## Debugging
 
